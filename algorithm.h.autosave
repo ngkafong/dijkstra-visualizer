@@ -1,0 +1,19 @@
+#ifndef ALGORITHM_H
+#define ALGORITHM_H
+#include "vertex.h"
+
+class Algorithm
+{
+public:
+    Algorithm();
+    void setEnabled();
+
+private:
+
+	std::map<std::string, Vertex*> unvisited_vertex;    
+	std::map<std::string, Vertex*> visited_vertex;
+    std::string findMinVertex();
+    
+};
+
+#endif // ALGORITHM_H
